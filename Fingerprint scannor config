@@ -1,0 +1,23 @@
+Finger Print scanner: 
+
+
+    Red: Depending on the accepted voltage of the sensor (3.3V or 5V).
+    White: RXD
+    Green: TXD
+    Black: GND
+
+
+	ls /dev/ttyUSB* // check is sensor detected
+	
+	Installation of the Raspberry Pi Fingerprint Library: 
+	1)	sudo bash
+	2)	// download packages and library // alternitivly https://github.com/adafruit/Adafruit-Fingerprint-Sensor-Library -> https://github.com/bastianraschke/pyfingerprint
+		wget -O - http://apt.pm-codeworks.de/pm-codeworks.de.gpg | apt-key add -
+		wget http://apt.pm-codeworks.de/pm-codeworks.list -P /etc/apt/source
+		
+	3) 	// update packages and install pyton library
+		apt-get update
+		apt-get install python-fingerprint --yes 
+		
+		
+	Python script to follow
