@@ -1,6 +1,12 @@
 const express = require('express');  // bring in express
+const expressLayouts = require('express-ejs-layouts')// init express layouts
 
 const app = express();  // basic express variable 
+
+
+// EJS
+app.use(expressLayouts); 
+app.set('view engine', 'ejs'); 
 
 app.use('/', require('./routes/index')); // link to routes 
 app.use('/users', require('./routes/users')); // link to routes 
