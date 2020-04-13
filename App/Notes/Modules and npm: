@@ -1,0 +1,25 @@
+Modules and npm:
+- NPM is the package manager for node
+- NPM should be installed globally 
+- npm install <packagename> is used to activate the package manager ()
+- Simply executing npm install will install all the modules listed in the package.json file in the current directory
+- express-generator adds a command to the terminal that lets the user create a generic ExpressJS application server 
+- Modules are wrapped 
+    (function (exports, require, module, __filename, __dirname) {
+    // The code we write will be here
+    });
+
+
+package.json: 
+- We now know that running npm install will look for a package.json file and install the packages listed there
+- Run npm init in the terminal and it will guide you through a series of prompts 
+
+The node_modules Folder:
+- This is where npm installs local Modules
+- You can create modules
+- Reuseable code 
+
+require() :
+- Requre is specific to node
+- When you require a module, you execute the JavaScript code that makes up the specified module.
+

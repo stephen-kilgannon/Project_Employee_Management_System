@@ -1,0 +1,29 @@
+Notes: 
+Introduction: 
+
+Node js
+In 2009, Ryan Dahl created Node.js, a framework used primarily to create scalable network applications. Node.js is built on top of Google’s V8 JavaScript engine (the same one used in Chrome) and Joyent’s libuv, an asynchronous I/O library that abstracts away the underlying platform.
+- Made using JavaScript
+- node allows chromes v8 browser to access system paripherals 
+- Modules are basically like liberiery in C
+
+MongoDb (No sql)
+- This class of database, known as NoSQL, doesn’t even use the familiar table structures of relational databases
+- Relational databases stores values as key value pairs
+- MongoDB is a document-oriented database that stores information as Binary JSON (BSON) documents.
+- Just as Node replaces another server-side language with JavaScript, MongoDB replaces SQL with queries based on JavaScript objects.
+
+AngularJS
+- SPAs have just a single page load, and request all other data via Ajax calls.
+- AngularJS is one of most popular frameworks for creating SPAs.
+- Angular was created in 2009 (a busy year for JavaScript) by Miško Hevery and Adam Abrons.
+- First, Angular provides two-way data binding between views and models. 
+- Angular automatically keeps everything in sync
+
+Additional
+- Mean Stack is a combination of (MongoDB,express,AngularJS,node)
+- Task runners Gulp and Grunt, which are extremely useful for automating mundane. Repetitive tasks. 
+- JSHint, a linting tool used to improve code quality
+- Linting tools analyze source code and report potentials issues, a feature that’s especially useful in non-compiled languages such as JavaScript.
+- Google Chrome’s developer tools to act as a front end to Node’s built-in debugger.
+- Mocha, on the other hand, is a Node.js-based testing framework.

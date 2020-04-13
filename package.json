@@ -1,0 +1,23 @@
+{
+  "name": "erp",
+  "version": "1.0.0",
+  "description": "Employee management system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G00303770/Project_Employee_Management_System.git"
+  },
+  "author": "Stephen Kilgannon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/G00303770/Project_Employee_Management_System/issues"
+  },
+  "homepage": "https://github.com/G00303770/Project_Employee_Management_System#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}

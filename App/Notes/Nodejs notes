@@ -1,0 +1,26 @@
+Node Notes: 
+
+- JavaScript, the language, is the same both client-side and server-side using Node. 
+
+The Problem with I/O:
+- Any non-trivial web server will eventually have to execute some I/O.
+- slowest part of any systemis I/O 
+- The cost of I/O over a network is segnificantly slower 240G cycles
+- Here are the steps of the life cycle:
+a) Request comes from server 
+b) Rmote server hosts database, server sends query to database. 
+c) Database runs query 
+d) Database responds to server
+e) server con=nverts data to JSON
+f) Server reads from local html file to display results 
+g) The server responds to the request and returns HTML with all the red cars in our database.
+
+"As you can see this leads to the delay in I/O, I/O activity that blocks other processing from happen in a running program is known as blocking I/O."
+- Multiple requests would bottle neck the system 
+- Node.js is a nnon blocking language
+- It achives this by using Callbacks.
+- A callback is a function that is executed when I/O operations finish or produce an error. 
+- Node is not designed for labour entensive applications
+
+
+Creating a simple server:

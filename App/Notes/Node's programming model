@@ -1,0 +1,22 @@
+
+Node’s Programming Mode: 
+- A language’s programming model defines how developers write code
+- Node is just javascript 
+
+
+The Event loop: 
+- Single threaded: his means that JavaScript applications can only perform one task at a time. 
+- JavaScript engine maintains several queues of unhandled tasks. These queues include things such as events, timers, intervals, and immediates. 
+- There are a few ways to achieve concurrent execution in JavaScript. The most common example is Web Workers, which execute code in separate threads. In Node, you can fork child processes using the child_process and cluster modules.
+- the event loop works on callbacks however an infinate loop will kill this structure
+
+Call back functions: 
+- A call back function is a functionn thats invoked at the completion of an asynchronous operation with the result being passed as the function arguments. 
+- try catches are used sparingly in node as any error would go missed by the try catch if it is invoking a callback, this is because the error does not happen in the try catch. 
+- Be contious of having callbacks within callbacks
+
+Promises
+- Promisis are another form that allow nodes asynchronous model 
+- Promises are objects that represent a value that is yet to be known when the promise is created.
+- When a promise is created, it’s in a state known as pending or unfulfilled.
+- To fulfill the promise, you call the resolve() function. To reject the promise, you call reject().
