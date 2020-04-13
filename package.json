@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/G00303770/Project_Employee_Management_System#readme",
   "dependencies": {
-    "colors": "^1.4.0"
+    "async": "^3.2.0",
+    "colors": "^1.4.0",
+    "mongoose": "^5.9.9",
+    "mongoose-post-find": "0.0.2"
   }
 }
