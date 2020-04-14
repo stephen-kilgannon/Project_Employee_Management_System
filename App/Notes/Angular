@@ -1,0 +1,7 @@
+Angular Notes: 
+- Angular is a front-end framework used for creating single-page applications (SPAs).
+- The idea behind SPAs is that all the necessary code can be retrieved in a single page load or dynamically loaded as necessary.
+- Data is sent to and received from the server using Ajax requests
+AJAX: Communication object
+Templating: To avoid mixing HTML into the json data returned by the server.
+Routing: Routing allows you to select a piece of the application to display without requiring a page load. 
