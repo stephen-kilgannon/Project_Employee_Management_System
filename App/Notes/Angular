@@ -5,3 +5,22 @@ Angular Notes:
 AJAX: Communication object
 Templating: To avoid mixing HTML into the json data returned by the server.
 Routing: Routing allows you to select a piece of the application to display without requiring a page load. 
+
+
+- the biggest advantages of SPAs are improved performance and a more fluid user experience due to reduced page loads and smaller server transactions.
+- Browser history can effect SPAs
+- data binding 
+Model-View-Controller Architecture
+- Angular brings the Model-View-Controller (MVC) architecture to front-end web applications.
+- Under the MVC approach, the model defines the application at a data layer, independent of the user interface.
+- In Angular applications, controllers are JavaScript functions that are registered with the application using the controller() method.
+
+
+The Meaning of ng
+In Angular applications, you’ll see attributes or tags that start with "ng". 
+This alerts you to the attribute or tag being Angular-specific, 
+and will let you look up the documentation on the Angular website.
+
+The ng-app attribute is used to instruct Angular that the html element is 
+the root element for this application. In general, you’ll see this attribute on the html or body tags. 
+If you forget to useit, none of the Angular code will execute.

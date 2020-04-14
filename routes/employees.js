@@ -47,14 +47,11 @@ router.put('/employees/:employeeId', function (req, res, next) {
   delete req.body._id;
   req.body.team = req.body.team._id;
 
-  Employee.update({
-    id: req.params.employeeId
-  }, req.body, function (err, numberAffected, response) {
+  Employee.update({id: req.params.employeeId }, req.body, function (err, numberAffected, response) {
     if (err) {
       return next(err);
+      console.log("ID error");
     }
-
-    res.send(200);
   });
 });
 
