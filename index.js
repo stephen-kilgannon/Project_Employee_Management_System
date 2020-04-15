@@ -12,7 +12,9 @@ var teams = require('./routes/teams');
 
 var app = express();
 
-
+app.post('/create', (req, res) => {
+  console.log('Hellooooooooooooooooo!')
+}); 
 
 // Middleware
 app.use(logger('dev'));

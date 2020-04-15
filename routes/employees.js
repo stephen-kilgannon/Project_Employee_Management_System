@@ -55,4 +55,18 @@ router.put('/employees/:employeeId', function (req, res, next) {
   });
 });
 
+router.post('/employees/:employeeId', function (req, res, next) {
+  // Remove this or mongoose will throw an error
+  // because we would be trying to update the mongo ID
+  delete req.body._id;
+  req.body.team = req.body.team._id;
+
+  Employee.update({id: req.params.employeeId }, req.body, function (err, numberAffected, response) {
+    if (err) {
+      return next(err);
+      console.log("ID error");
+    }
+  });
+});
+
 module.exports = router;

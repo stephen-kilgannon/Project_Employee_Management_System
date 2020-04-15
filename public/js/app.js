@@ -1,4 +1,5 @@
-'use strict';
+'use strict'; // Defines that JavaScript code should be executed in "strict mode".
+const app = express();
 
 // Declaring app named app which depends on ngRoute and ngResource
 var app = angular.module('app', ['ngRoute', 'ngResource'])
@@ -8,6 +9,7 @@ var app = angular.module('app', ['ngRoute', 'ngResource'])
         'Kildare','Kilkenny','Laois','Leitrim','Limerick','Longford','Louth','Mayo','Meath','Monaghan','Offaly',
         'Roscommon','Sligo','Tipperary','Tyrone','Waterford','Westmeath','Wexford','Wicklow']
   });
+   
 // The config() call is used to inject $routeProvider in order to create a client-side router
 app.config(['$routeProvider', function($routeProvider) {
 
@@ -31,6 +33,7 @@ app.config(['$routeProvider', function($routeProvider) {
     .when('/create', {
       templateUrl: 'create.html',
       controller: 'TeamsCtrl'
+      
     })
     .when('/teams/:teamId', {
       templateUrl: 'team.html',
@@ -40,6 +43,9 @@ app.config(['$routeProvider', function($routeProvider) {
       redirectTo: '/'
     });
 }]);
+
+
+
 
 // Two calls to factory() are used to create the EmployeeService and TeamService
 app.factory('EmployeeService', ['$resource', function($resource) {
@@ -113,6 +119,8 @@ app.directive('imageFallback', function() {
 
   return exports;
 });
+
+
 
 app.controller('EmployeesCtrl', ['$scope', 'EmployeeService', 
 function($scope, service) {
@@ -210,3 +218,6 @@ function _handleError(response) {
   // TODO: redirect to error page 
   console.log('%c ' + response, 'color:red');
 }
+app.post('/create', (req, res) => {
+  console.log('Hellooooooooooooooooo!')
+})
