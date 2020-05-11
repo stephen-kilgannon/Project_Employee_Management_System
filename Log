@@ -1,0 +1,7 @@
+What needed to be completed. 
+
+Angular page for create
+Writing to databse upon creation (Database schemas are already created and addEmployee.js is wrote to send data to MongoDB) 
+Connet the hardware to the api using the HTTP post from the fingerprint 
+
+Currently in the process of doing this should be completed tonight
