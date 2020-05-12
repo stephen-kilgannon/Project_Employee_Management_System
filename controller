@@ -1,0 +1,52 @@
+app.factory('createService', ['$http', function($http) {
+    var getData = function() {
+        return $http.get(" http://192.168.0.164:8081/FingerPrint?id=7")
+            .then(function(response) {
+                return response;
+            }).catch(_handleError);
+    }
+    return {
+        getData: getData
+    };
+}]);
+
+
+app.controller('CreateCtrl', ['$scope','createService','$http','$timeout', function($scope,createService,$http,$timeout) {
+    createService.getData().then(function(response){
+        $scope.createServiceData = response.data;
+        var extractedId = $scope.createServiceData.url.split('id=').pop();
+        $scope.createServiceDataID = extractedId;
+    }).catch(_handleError);
+
+    $scope.submitEmployeeData=function () {
+        var  data = {'firstname':$scope.firstname,'lastname':$scope.lastname,"id":$scope.createServiceDataID},config={'Content-Type' : 'application/json'};
+
+        $scope.dataLoading = false;
+
+        $http.post('/addEmployees', data, config).then(function (response) {
+
+            // This function handles success
+            $scope.success=true
+            $scope.successMessage=response.data.message;
+            $timeout(function(){
+                $scope.success=false;
+            }, 1000);
+            /*setTimeout(()=>{
+                $scope.success=false;
+            },2000)*/
+
+        }, function (response) {
+            $scope.error=true;
+            $scope.errorMessage=response.data.message;
+            $timeout(function(){
+                $scope.error=false;
+            }, 1000);
+
+        }).finally(function () {
+
+            $scope.dataLoading = false;
+        });
+    }
+
+
+}]);
