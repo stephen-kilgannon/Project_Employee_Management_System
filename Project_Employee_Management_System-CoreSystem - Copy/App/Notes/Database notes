@@ -1,0 +1,30 @@
+- Databases are primarily either relational or NoSQL. 
+NoSQL Databases
+- Essentially, NoSQL represents any data store that does not use SQL. 
+- MongoDB uses Document stores
+- typically faster 
+- CRUD (create, retrieve, update, and delete). 
+
+
+History of MongoDB
+- Development began on MongoDB in 2007 at a company named 10gen. Mongo was originally designed as a component in a planned PaaS (Platform as a Service) offering. Then in 2009, MongoDB was open-sourced.
+- sotres documents in JSON format
+
+
+Mongoose Module
+- The standard Node module used for database operations is Mongoose.
+- Mongoose exposes all the MongoDB features in an intuitive and JavaScript-friendly interface
+- Mongoose is the Node module that encapsulates the interactions with a MongoDB instance.
+
+Schemas
+- A schema maps to a MongoDB document or collection and is a set of rules and instructions for creating models.
+- The available SchemaTypes are:
+String
+Number
+Date
+Buffer
+Boolean
+Mixed
+ObjectId
+Array
+

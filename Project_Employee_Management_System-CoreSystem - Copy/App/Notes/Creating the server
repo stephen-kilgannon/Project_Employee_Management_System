@@ -1,0 +1,19 @@
+To do: 
+View employees as a list
+Make employee resources RESTful
+The RESTful design pattern also lines up cleanly with the employee operations we require for our application, namely create, retrieve, update, and delete (CRUD). 
+
+
+Structure of files
+|____database
+| |____employees.json
+|____index.js
+|____lib
+|____node_modules
+| |____colors
+|____package.json
+|____public
+| |____home.html
+| |____style.css
+
+I use employees.json as a database that we can query.

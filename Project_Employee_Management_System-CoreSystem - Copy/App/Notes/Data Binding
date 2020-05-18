@@ -1,0 +1,16 @@
+- In programming, data binding is the automatic synchronization of data is between a program’s data layer and the associated view layer
+- (one way data binding) SON would be used by the display layer to show the database results to the user.
+
+one-way data binding 
+- one way data binding is when a database displays data on a webpage,
+just for display. The html would only require the data from
+the database once. The user is unable to interact with the database
+- Not usableformy project 
+- Easy to implament 
+
+Two-Way Data Binding
+- Two-way data binding solves the data model and view syncing problem.
+Example:
+For example, suppose you had a sign-up form with two inputs for first and last name. With two-way data binding, as the user enters information, the underlying data model stays in sync with the view. There’s no need for any onChange or onKeyUp events to keep the data layer in sync with the view.
+
+

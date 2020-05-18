@@ -1,0 +1,18 @@
+- Express is a Node module that provides a thin web application framework around the core Node modules 
+- open sourced 
+- Express provides request routing, a static file server, view engine integration, and a plethora of community modules.
+ 
+ The Building Blocks of Express
+- An Express server can be broken down into three building blocks: the router, routes, and middleware.
+
+Router: 
+- The core of any web server is robust request routing. 
+- simpily the client requests a resource, the server tries to locate the resource and if it's found, respond in a way that the client is expecting.
+- The order in which routes are added to the router is very important. 
+
+Static Files 
+- A web server must have a simple way to serve static files.
+
+Middleware
+- Middleware is any JavaScript function that has the function signature function (req, res, next).
+- A request is considered complete when a middleware function sends a response to the client.

@@ -1,0 +1,36 @@
+<ul class="breadcrumb">
+    <li><a href="#teams">Create</a></li>
+    <li class="active"></li>
+</ul>
+<div>
+    <h4>Create</h4>
+</div>
+<div ng-if="dataLoading">
+    Loading...
+</div>
+<div ng-if="success">
+    {{successMessage}}
+</div>
+<div ng-if="error">
+    {{errorMessage}}
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4 form-offset">
+    <form ng-submit="submitEmployeeData()" >
+        <div class="form-group">
+            <label for="id">ID:</label>
+            <input type="text" class="form-control" id="id" ng-model="createServiceDataID"  enabled>
+        </div>
+        <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="text" class="form-control" id="firstname" ng-model="firstname">
+        </div>
+        <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input type="text" class="form-control" id="lastname" ng-model="lastname">
+        </div>
+        <button type="submit" class="btn btn-default btn-secondary" style="background:blue">
+            Submit
+        </button>
+    </form>
+</div>
